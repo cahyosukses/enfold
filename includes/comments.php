@@ -48,12 +48,12 @@ endif;
 	        		<div class='side-container-comment-inner'>
 	        			<?php 
 	        			$ccount = (int) get_comments_number();
-	        			$rep	= __( 'replies', 'avia_framework' );
-	        			if($ccount === 1) $rep	= __( 'reply', 'avia_framework' );
+	        			$rep	= __( 'comments', 'avia_framework' );
+	        			if($ccount === 1) $rep	= __( 'comment', 'avia_framework' );
 	        			?>
 	        			
 	        			<span class='comment-count'><?php echo $ccount; ?></span>
-   						<span class='comment-text'><?php echo $rep; ?></span>
+						<span class='comment-text'><?php echo $rep; ?></span>
    						<span class='center-border center-border-left'></span>
    						<span class='center-border center-border-right'></span>
    						
@@ -169,8 +169,8 @@ endif; // end have_comments()
 		*/
 		 
 		 echo "<div class='comment_container ".avia_layout_class('entry',false)." units $indent'>";
-		 echo "<h3 class='miniheading'>".__('Leave a Reply','avia_framework')."</h3>";
-		 echo "<span class='minitext'>".__('Want to join the discussion? <br/>Feel free to contribute!','avia_framework')."</span>";
+		 echo "<h3 class='miniheading'>".__('Got thoughts? Leave a comment.','avia_framework')."</h3>";
+		 echo "<span class='minitext'>".__('','avia_framework')."</span>";
 		 comment_form();
 		 echo "</div>";
 	 }
