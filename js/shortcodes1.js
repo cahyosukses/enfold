@@ -1757,7 +1757,7 @@ $.fn.aviaFullscreenSlider = function( options )
 	};
 
 
-$.fn.avia_parallax = function(options)
+/*$.fn.avia_parallax = function(options)
 {
 	
 	return this.each(function()
@@ -1769,7 +1769,7 @@ $.fn.avia_parallax = function(options)
     			self = $.data( this, 'aviaParallax', new $.AviaParallaxElement( options, this ) );
     		}
     	});
-}
+}*/
 
 
 // -------------------------------------------------------------------------------------------
