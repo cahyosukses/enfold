@@ -508,7 +508,16 @@ if( !class_exists( 'avia_backend_walker' ) )
 							<textarea id="edit-menu-item-description-<?php echo $item_id; ?>" class="widefat edit-menu-item-description" rows="3" cols="20" name="menu-item-description[<?php echo $item_id; ?>]"><?php echo esc_html( $item->post_content ); ?></textarea>
 						</label>
 					</p>
-
+					
+					<?php 
+					
+					//this hook should provide compatibility with a lot of wordpress plugins altering the walker like http://wordpress.org/plugins/nav-menu-roles/
+					//learn more here: http://shazdeh.me/2014/06/25/custom-fields-nav-menu-items/
+					
+					do_action( 'wp_nav_menu_item_custom_fields', $item_id, $item, $depth, $args ); 
+					
+					?>
+					
 					<div class='avia_mega_menu_options'>
 					<!-- ################# avia custom code here ################# -->
 						<?php
