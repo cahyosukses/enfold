@@ -28,6 +28,8 @@ html.responsive {
   padding: 0px;
   clear: both;
 }
+ #testimonials .avia-content-slider-active .slide-entry-wrap{ width:910px !important;} 
+#testimonials .bx-wrapper{ max-width:910px !important;}
 /*no z-index for container_wrap or fixed bgs start disapearing when other elements transition -> weird chrome bug*/
 .container_wrap {
   clear: both;
@@ -165,6 +167,8 @@ body .units.alpha {
   .responsive .container {
     width: 1030px;
   }
+   #testimonials .avia-content-slider-active .slide-entry-wrap{ width:1030px !important;} 
+#testimonials .bx-wrapper{ max-width:1030px !important;}
   .responsive .container .one.unit,
   .responsive .container .one.units {
     width: 40px;
@@ -247,6 +251,8 @@ body .units.alpha {
   .responsive_large .container {
     width: 1210px;
   }
+   #testimonials .avia-content-slider-active .slide-entry-wrap{ width:1210px !important;} 
+#testimonials .bx-wrapper{ max-width:1210px !important;}
   .responsive_large .container .one.unit,
   .responsive_large .container .one.units {
     width: 55px;
@@ -334,6 +340,8 @@ body .units.alpha {
   .responsive .container {
     width: 682px;
   }
+    #testimonials .avia-content-slider-active .slide-entry-wrap{ width:682px !important;} 
+#testimonials .bx-wrapper{ max-width:682px !important;}
   .responsive .container .one.unit,
   .responsive .container .one.units {
     width: 11px;
@@ -422,6 +430,8 @@ body .units.alpha {
     width: 268px;
     margin: 0 auto;
   }
+  #testimonials .avia-content-slider-active .slide-entry-wrap{ width:268px !important;} 
+#testimonials .bx-wrapper{ max-width:268px !important;}
   .responsive .units,
   .responsive .unit {
     margin: 0;
@@ -501,6 +511,8 @@ body .units.alpha {
   .responsive #top.boxed .stretch_full {
     width: 100%;
   }
+    #testimonials .avia-content-slider-active .slide-entry-wrap{ width:428px !important;} 
+#testimonials .bx-wrapper{ max-width:428px !important;}
 }
 /* #Clearing
 ================================================== */
