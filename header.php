@@ -4,11 +4,13 @@
 	$style 		= $avia_config['box_class'];
 	$responsive	= avia_get_option('responsive_layout','responsive');
 	$blank 		= isset($avia_config['template']) ? $avia_config['template'] : "";	
+	$av_lightbox= avia_get_option('lightbox_active') != "disabled" ? 'av-default-lightbox' : 'av-custom-lightbox';
+	
 ?>
 
 
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="<?php echo " html_{$style} ".$responsive." ".avia_header_class_string();?> ">
+<html <?php language_attributes(); ?> class="<?php echo " html_{$style} ".$responsive." ".$av_lightbox." ".avia_header_class_string();?> ">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
@@ -52,7 +54,13 @@ if( strpos($responsive, 'responsive') !== false ) echo '<meta name="viewport" co
 wp_head();
 
 ?>
-
+     <script type="text/javascript">
+	 jQuery(document).ready(function($)
+    {	
+	   $(".av-parallax").append("<img src='<?php bloginfo('template_url'); ?>/images/Client_logos_1200px.png' alt='' class='img_big'/><img src='<?php bloginfo('template_url'); ?>/images/Client_logos_500px.png' alt='' class='img_small'/>");
+	});
+	 
+	 </script>
 </head>
 
 
